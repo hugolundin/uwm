@@ -1,3 +1,6 @@
 [submodule "vendor/minifb"]
 	path = vendor/minifb
 	url = https://github.com/emoon/minifb.git
+[submodule "vendor/rpclib"]
+	path = vendor/rpclib
+	url = https://github.com/rpclib/rpclib.git
