@@ -78,15 +78,3 @@ void WindowServer::ipc_thread_run()
 }
 
 }
-
-int main(int argc, char const *argv[])
-{
-    WindowServer::WindowServer window_server {
-        std::string("Window"),
-        500,
-        400
-    };
-
-    window_server.run();
-    return 0;
-}
