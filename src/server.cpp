@@ -1,14 +1,23 @@
 #include <iostream>
 #include "rpc/server.h"
+#include "readerwriterqueue.h"
 
 int main(int argc, char const *argv[])
 {
-    rpc::server server(rpc::constants::DEFAULT_PORT);
+    moodycamel::ReaderWriterQueue<int> q;
+    
+    int number;
+    q.enqueue(5);
+    auto res = q.try_dequeue(number);
 
-    server.bind("add", [&](int a, int b) {
-        return a + b;
-    });
+    std::cout << number << std::endl;
 
-    server.run();
-    return 0;
+    // rpc::server server(rpc::constants::DEFAULT_PORT);
+
+    // server.bind("add", [&](int a, int b) {
+    //     return a + b;
+    // });
+
+    // server.run();
+    // return 0;
 }

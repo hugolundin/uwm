@@ -4,3 +4,6 @@
 [submodule "vendor/rpclib"]
 	path = vendor/rpclib
 	url = https://github.com/rpclib/rpclib.git
+[submodule "vendor/readerwriterqueue"]
+	path = vendor/readerwriterqueue
+	url = https://github.com/cameron314/readerwriterqueue.git
