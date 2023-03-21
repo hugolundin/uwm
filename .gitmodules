@@ -7,3 +7,12 @@
 [submodule "vendor/readerwriterqueue"]
 	path = vendor/readerwriterqueue
 	url = https://github.com/cameron314/readerwriterqueue.git
+[submodule "vendor/cppzmq"]
+	path = vendor/cppzmq
+	url = https://github.com/zeromq/cppzmq
+[submodule "vendor/nngpp"]
+	path = vendor/nngpp
+	url = https://github.com/cwzx/nngpp.git
+[submodule "vendor/nng"]
+	path = vendor/nng
+	url = https://github.com/nanomsg/nng.git

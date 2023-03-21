@@ -15,4 +15,8 @@ set_target_properties(rpc PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/vendo
 include_directories(vendor/readerwriterqueue)
 add_subdirectory(vendor/readerwriterqueue)
 
+find_package(nng REQUIRED)
+find_package(Threads)
+find_package(nngpp REQUIRED)
+
 add_subdirectory(src)
